@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ecommerc</title>
+	<!-- Booststrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- Top menu start -->
+<nav class="navbar navbar-expand-lg bg-dark m-0 p-0">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="#">My Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Wishlist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--main navbar start-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fs-5 fw-medium" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fw-medium" aria-current="page" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fw-medium active text-danger" aria-current="page" href="product-details.html">Product Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fw-medium" aria-current="page" href="signup.html">Signup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fw-medium" aria-current="page" href="login.html">Login</a>
+        </li>
+      </ul>
+      <!-- Cart start -->
+      	<button type="button" class="btn btn-outline-primary position-relative mx-auto">
+			  <i class="bi bi-cart-check-fill fs-5"></i> <span class="fs-5">Cart</span>
+			  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+			    2
+			    <span class="visually-hidden">unread messages</span>
+			  </span>
+		</button>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- breadcome start -->
+	<div class="container">
+				<nav aria-label="breadcrumb" class="mt-5">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="#">Home</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Products Details</li>
+			  </ol>
+			</nav><hr>
+	</div>
+	<!-- product details start -->
+	<div class="container mt-5">
+    <div class="row">
+        <!-- Product Images -->
+        <div class="col-md-6 mb-4">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Product" class="img-fluid rounded mb-3 product-image" id="mainImage">
+            <div class="d-flex justify-content-between">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 1" class="thumbnail rounded active" onclick="changeImage(event, this.src)">
+                <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 2" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 3" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+                <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 4" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6">
+            <h2 class="mb-3">Premium Wireless Headphones</h2>
+            <p class="text-muted mb-4">SKU: WH1000XM4</p>
+            <div class="mb-3">
+                <span class="h4 me-2">$349.99</span>
+                <span class="text-muted"><s>$399.99</s></span>
+            </div>
+           <!--  <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-half text-warning"></i>
+                <span class="ms-2">4.5 (120 reviews)</span>
+            </div> -->
+            <p class="mb-4">Experience premium sound quality and industry-leading noise cancellation with these wireless
+                headphones. Perfect for music lovers and frequent travelers.</p>
+          <!--   <div class="mb-4">
+                <h5>Color:</h5>
+                <div class="btn-group" role="group" aria-label="Color selection">
+                    <input type="radio" class="btn-check" name="color" id="black" autocomplete="off" checked>
+                    <label class="btn btn-outline-dark" for="black">Black</label>
+                    <input type="radio" class="btn-check" name="color" id="silver" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="silver">Silver</label>
+                    <input type="radio" class="btn-check" name="color" id="blue" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="blue">Blue</label>
+                </div>
+            </div> -->
+            <div class="mb-4">
+                <label for="quantity" class="form-label">Quantity:</label>
+                <input type="number" class="form-control" id="quantity" value="1" min="1" style="width: 80px;">
+            </div>
+            <button class="btn btn-primary mb-3 me-2">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+          <!--   <button class="btn btn-outline-secondary btn-lg mb-3">
+                    <i class="bi bi-heart"></i> Add to Wishlist
+                </button> -->
+            <div class="mt-4">
+                <h5>Key Features:</h5>
+                <ul>
+                    <li>Industry-leading noise cancellation</li>
+                    <li>30-hour battery life</li>
+                    <li>Touch sensor controls</li>
+                    <li>Speak-to-chat technology</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer start -->
+<div class="footer-section bg-dark">
+	<div class="container py-3">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="text-light mt-3">Development By &copy; 2026 | <a href="#">Rubel Mahmud</a></p>
+			</div>
+			<div class="col-md-6">
+				<h2 class="text-light mt-3">Date: </h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- Javascript link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function changeImage(event, src) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+</script>
+</body>
+</html>
